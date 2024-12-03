@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan jQuery 02</title>
+    <link rel="stylesheet" href="/sesi02/02.css">
+</head>
+<body>
+
+    <p>anjai alok</p>
+    <input type="text" id="txNama" placeholder="ALOKKK">
+    <button id="cmdNama">Tombol alok</button>
+
+
+    <script src="../jquery/jquery-3.7.1.min.js"></script>
+    <p class="viewNama">--Nama--</p>
+
+    <script>
+         $(function() {
+            $("#cmdNama").on('click',function(){
+                let nama=$('#txNama').val()
+                $('.viewNama').html(nama) 
+            })
+        })
+    </script>
+</body>
+</html>
